@@ -22,7 +22,7 @@ API_ID = int(environ.get("API_ID", "20388171"))
 API_HASH = environ.get("API_HASH", "38540844297c567f00a74ad5a09f69b2")
 BOT_TOKEN = environ.get("BOT_TOKEN", "7916557849:AAFaxNlVc0UzA4K168qQ0rzJJWz4AgEcr08")
 
-PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
+PICS = (environ.get('PICS', '')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6893701094').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "Demon_king1_bot") # without @
 PORT = environ.get("PORT", "8080")
@@ -46,7 +46,7 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "40")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002403815068"))
 
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
